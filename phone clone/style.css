@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.phone-outter {
+  width: 300px;
+  height: 650px;
+  background: rgb(26, 112, 79);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 0 0 20px 10px rgb(38, 70, 33);
+}
+section {
+  padding-top: 2.5px;
+}
+
+.phone-inner {
+  position: relative;
+  width: 295px;
+  height: 645px;
+  background: #111;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 0 0 5px #000;
+}
+.phone-inner::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  width: 285px;
+  height: 620px;
+  background: url(./assets/Kobe\ Bryant\ Career\ Montage\ Illustration.jpeg);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.phone-inner::after {
+  content: "";
+  position: absolute;
+  left: 48%;
+  top: 15px;
+  width: 10px;
+  height: 10px;
+  background: rgba(102, 102, 102, 0.795);
+  box-shadow: inset 0 0 5px #444;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 5;
+}
+.signal {
+  z-index: 8;
+  position: absolute;
+  right: 50px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+}
+.signal img {
+  width: 15px;
+  height: 15px;
+}
+.search {
+  z-index: 20;
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  left: 17px;
+  padding: 5px;
+  column-gap: 7px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 0px 2px #000;
+}
+.search i {
+  font-size: 20px;
+
+  background: -webkit-linear-gradient(
+    top,
+    #4285f4 30%,
+    #34a853 20%,
+    #fbbc05 40%,
+    #ea4335 10%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.search input {
+  height: 20px;
+  border: none;
+  background-color: rgb(247, 245, 245);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.search input::-webkit-input-placeholder {
+  font-size: 12px;
+  padding-left: 10px;
+  font-weight: 300;
+}
+.basic-comp {
+  position: absolute;
+  left: 60px;
+  bottom: 55px;
+  column-gap: 60px;
+}
+.basic-comp i {
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.basic-comp i:nth-child(1) {
+  background-color: #34a853;
+}
+.basic-comp i:nth-child(2) {
+  background: #fff;
+}
+.basic-comp i:nth-child(3) {
+  background-color: #4285f4;
+
+  color: #fff;
+}
+.phone-control span {
+  position: absolute;
+  color: rgba(34, 34, 34, 0.671);
+  left: calc(60px * var(--i));
+  bottom: 30px;
+}
+#time {
+  color: #000;
+  font-size: 11px;
+  position: absolute;
+  left: 10px;
+  top: 13px;
+}

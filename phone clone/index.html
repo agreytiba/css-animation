@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>phone clone</title>
+  </head>
+  <body class="flex" onload="startTime()">
+    <div class="container">
+      <div class="phone-outter">
+        <section class="flex">
+          <div class="phone-inner">
+            <div class="phone-header">
+              <div id="time"></div>
+              <div class="signal">
+                <img src="./assets/signal.png" alt="signal" />
+                <img src="./assets/signal.png" alt="signal" />
+              </div>
+              <div class="search flex">
+                <input
+                  type="text"
+                  name="search"
+                  id="search"
+                  placeholder="search..."
+                />
+                <i class="material-icons">mic</i>
+
+                <i class="material-icons">camera_alt</i
+                ><i class="material-icons">apps</i>
+              </div>
+              <div>
+                <div class="basic-comp flex">
+                  <i class="material-icons" style="--j: 1">call</i
+                  ><i class="material-icons" style="--j: 2.5">apps</i>
+                  <i class="material-icons" style="--j: 4">chat</i>
+                </div>
+              </div>
+            </div>
+            <div class="phone-control">
+              <span class="fa fa-square" style="--i: 1"></span>
+              <span
+                class="fa fa-circle"
+                style="--i: 2.5"
+                aria-hidden="true"
+              ></span
+              >>
+              <span class="fa fa-play" style="--i: 4"></span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+  <script src="App.js"></script>
+</html>
