@@ -1,2 +1,2 @@
 # css-animation
-#using css only
+using css only
